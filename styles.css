@@ -1,6 +1,6 @@
 :root {
   --navy: #172A45;
-  --teal: #4F8C8D;
+  --teal: #3D7778;
   --warm-beige: #E8D8C4;
   --off-white: #FAF8F5;
   --charcoal: #3D4652;
@@ -235,6 +235,12 @@ textarea:focus-visible {
   padding: 76px 0 78px;
 }
 
+.home-hero h1 {
+  max-width: 760px;
+  font-size: clamp(2.6rem, 4.55vw, 4.25rem);
+  line-height: 1.08;
+}
+
 .development-hero {
   padding-bottom: 76px;
 }
@@ -415,7 +421,7 @@ a.contact-detail:focus-visible {
 .contact-detail small {
   display: block;
   margin-top: 2px;
-  color: rgba(61, 70, 82, 0.72);
+  color: rgba(61, 70, 82, 0.86);
 }
 
 .stacked-actions {
@@ -479,7 +485,7 @@ a.contact-detail:focus-visible {
 }
 
 .form-note {
-  color: rgba(61, 70, 82, 0.72);
+  color: rgba(61, 70, 82, 0.86);
   font-size: 0.92rem;
 }
 
@@ -595,7 +601,7 @@ a.contact-detail:focus-visible {
 }
 
 .portfolio-showcase {
-  min-height: 560px;
+  min-height: 620px;
   position: relative;
   overflow: hidden;
   border: 1px solid var(--line);
@@ -616,24 +622,24 @@ a.contact-detail:focus-visible {
 }
 
 .showcase-main {
-  width: 58%;
-  top: 42px;
-  left: 42px;
-  transform: rotate(-2deg);
+  width: 76%;
+  top: 34px;
+  left: 34px;
+  transform: rotate(-1.7deg);
 }
 
 .showcase-secondary {
-  width: 58%;
-  right: 42px;
-  bottom: 42px;
-  transform: rotate(2deg);
+  width: 74%;
+  right: 34px;
+  bottom: 34px;
+  transform: rotate(1.6deg);
 }
 
 .showcase-proof {
-  width: 66%;
-  right: 36px;
-  top: 92px;
-  transform: rotate(1deg);
+  width: 78%;
+  right: 26px;
+  top: 214px;
+  transform: rotate(0.8deg);
 }
 
 .featured-case-content {
@@ -1225,28 +1231,33 @@ a.contact-detail:focus-visible {
 
 .about-philosophy-panel {
   display: grid;
-  gap: 24px;
-  padding: clamp(42px, 6vw, 72px);
+  justify-items: center;
+  gap: 26px;
+  padding: clamp(44px, 5vw, 64px);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background:
     linear-gradient(135deg, rgba(79, 140, 141, 0.1), transparent 42%),
     var(--white);
   box-shadow: var(--shadow);
+  text-align: center;
 }
 
 .philosophy-lines {
   display: grid;
-  gap: 8px;
+  width: min(100%, 920px);
+  gap: 12px;
+  justify-items: center;
 }
 
 .philosophy-lines p {
-  max-width: none;
+  max-width: 820px;
+  margin: 0;
   color: var(--navy);
   font-family: "Playfair Display", Georgia, serif;
-  font-size: clamp(2.2rem, 6vw, 5.2rem);
+  font-size: clamp(2.15rem, 4.7vw, 4.15rem);
   font-weight: 700;
-  line-height: 1.05;
+  line-height: 1.08;
 }
 
 .about-person-grid {
@@ -1427,6 +1438,10 @@ a.contact-detail:focus-visible {
 .cta-panel h2 {
   margin: 10px auto 16px;
   color: var(--white);
+}
+
+.cta-panel .eyebrow {
+  color: var(--warm-beige);
 }
 
 .cta-panel .button {
@@ -1901,8 +1916,12 @@ a.contact-detail:focus-visible {
   }
 
   h1 {
-    font-size: clamp(2.18rem, 12vw, 3.15rem);
+    font-size: clamp(2.18rem, 11vw, 3.05rem);
     line-height: 1.08;
+  }
+
+  .home-hero h1 {
+    font-size: clamp(2.3rem, 10vw, 3rem);
   }
 
   h2 {
@@ -1929,6 +1948,15 @@ a.contact-detail:focus-visible {
 
   .about-philosophy-panel {
     padding: 34px 24px;
+  }
+
+  .philosophy-lines {
+    gap: 10px;
+  }
+
+  .philosophy-lines p {
+    font-size: clamp(2rem, 9vw, 2.9rem);
+    line-height: 1.1;
   }
 
   .form-grid,
@@ -1974,25 +2002,25 @@ a.contact-detail:focus-visible {
   }
 
   .portfolio-showcase {
-    min-height: 390px;
+    min-height: 520px;
   }
 
   .showcase-main {
-    width: 68%;
-    top: 24px;
+    width: 80%;
+    top: 22px;
     left: 18px;
   }
 
   .showcase-secondary {
-    width: 66%;
+    width: 78%;
     right: 18px;
-    bottom: 24px;
+    bottom: 22px;
   }
 
   .showcase-proof {
-    width: 72%;
-    right: 18px;
-    top: 82px;
+    width: 82%;
+    right: 16px;
+    top: 178px;
   }
 
   .portfolio-project-card {
